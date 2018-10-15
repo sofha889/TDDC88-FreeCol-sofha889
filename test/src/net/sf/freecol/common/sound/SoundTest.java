@@ -71,7 +71,7 @@ public class SoundTest extends FreeColTestCase {
             try { // Just play the beginning of the sound to check it works
                 Thread.sleep(100);
                 soundPlayer.stop();
-                Thread.sleep(50);
+                Thread.sleep(50); //Here we sleep
             } catch (InterruptedException e) {}
         } catch (Exception e) {
             fail("Could not play " + id + ": " + e.getMessage());
